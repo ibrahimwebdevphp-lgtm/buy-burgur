@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the Admin Dashboard</h1>
+    <p>Manage your burger orders and customers here.</p>
+<div class="datauser">
+    <h2>Customer Data</h2>
+    <table>
+        <tr>
+            <th id="name">Name</th>
+            <th>Email</th>
+            <th id="id">Order ID</th>
+            <th id="address">Address</th>
+            <th id="phone">Phone</th>
+        </tr>
+    </table>
+</div>
+
+    <div class="dataorder">
+        <h2>Order Data</h2>
+        <table>
+            <tr>
+                <th id="id">Order ID</th>
+                <th id="name">Customer Name</th>
+                <th id="burger-type">Burger Type</th>
+                <th id="quantity">Quantity</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        // JavaScript code to manage customer and order data
+            const urlParams = new URLSearchParams(window.location.search);
+        const address = urlParams.get('address');
+        document.getElementById('address').textContent = address;
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        const url = new URLSearchParams(window.location.search);
+        const phone = urlParams.get('phone');
+        document.getElementById('phone').textContent = phone;
+            
+            const ur = new URLSearchParams(window.location.search);
+        const id = ur.get('id');
+        document.getElementById('id').textContent = id;
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    const name = new URLSearchParams(window.location.search);
+        const customerName = name.get('name');
+        document.getElementById('name').textContent = customerName;
+
+            </script>
+
+</body>
+</html>
